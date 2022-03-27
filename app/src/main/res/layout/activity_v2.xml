@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/a_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a_image"
+    tools:context=".V2">
+
+    <ImageView
+        android:id="@+id/imageV2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/ap2"
+        android:layout_width="33dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/wifi"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="50dp" />
+
+    <ImageView
+        android:id="@+id/ap3"
+        android:layout_width="33dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/wifi"
+        tools:layout_editor_absoluteX="340dp"
+        tools:layout_editor_absoluteY="50dp" />
+
+    <ImageView
+        android:id="@+id/ap1"
+        android:layout_width="33dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/wifi"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="50dp" />
+
+    <ImageButton
+        android:id="@+id/floc"
+        android:layout_width="51dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/find_location" />
+
+    <ImageButton
+        android:id="@+id/vars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/floc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/presence_online" />
+
+    <EditText
+        android:id="@+id/ap1_r1"
+        android:layout_width="70sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="ap1_r1"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ap2_r2"
+        android:layout_width="70sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="ap2_r2"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/ap1_r1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ap3_r3"
+        android:layout_width="70sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="ap3_r3"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/ap2_r2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imlocv2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:srcCompat="@drawable/location"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="74dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/a_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a_image"
+    tools:context=".BGI">
+
+        <ImageView
+            android:id="@+id/imageV1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    <Button
+        android:id="@+id/bt_v2"
+        android:layout_width="52dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="V2"
+        app:layout_constraintBottom_toTopOf="@+id/bgi_floc"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/bgi_img1"
+        android:layout_width="33dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/wifi"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="43dp" />
+
+    <ImageView
+        android:id="@+id/bgi_img2"
+        android:layout_width="33dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/wifi"
+        tools:layout_editor_absoluteX="343dp"
+        tools:layout_editor_absoluteY="43dp" />
+
+    <ImageView
+        android:id="@+id/bgi_img3"
+        android:layout_width="33dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/wifi"
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="43dp" />
+
+    <ImageView
+        android:id="@+id/bgi_img_loc"
+        android:layout_width="28dp"
+        android:layout_height="27dp"
+        app:srcCompat="@drawable/location"
+        tools:layout_editor_absoluteX="191dp"
+        tools:layout_editor_absoluteY="267dp"
+
+        />
+
+    <ImageButton
+        android:id="@+id/bgi_floc"
+        android:layout_width="51dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/find_location" />
+
+    <ImageButton
+        android:id="@+id/bgi_umap"
+        android:layout_width="66dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/update_map" />
+
+    <TextView
+        android:id="@+id/bgi_tvx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="2dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/bgi_tvy"
+        app:layout_constraintEnd_toStartOf="@+id/bgi_floc"
+        app:layout_constraintStart_toEndOf="@+id/bgi_umap" />
+
+    <TextView
+        android:id="@+id/bgi_tvy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="24dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bgi_floc"
+        app:layout_constraintStart_toEndOf="@+id/bgi_umap" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
